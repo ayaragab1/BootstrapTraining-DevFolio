@@ -1,0 +1,465 @@
+body {
+  background-color: #f5f5f5;
+  color: #4e4e4e;
+}
+
+header.vh-100 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3rem;
+}
+.sec-pt-4{
+padding-top: 5rem;
+}
+/* Nested Dropdown menu */
+.dropdown-menu li {
+  position: relative;
+}
+.dropdown-menu .dropdown-submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: -7px;
+}
+.dropdown-menu .dropdown-submenu-left {
+  right: 100%;
+  left: auto;
+}
+.dropdown-menu > li:hover > .dropdown-submenu {
+  display: block;
+}
+
+.nav-items {
+  font-weight: 600;
+}
+.navbar-nav .nav-link {
+  color: white;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  top: 95%;
+  left: 9px;
+  background-color: white;
+  transition: width 0.5s ease;
+  -webkit-transition: width 0.5s ease;
+  -moz-transition: width 0.5s ease;
+  -ms-transition: width 0.5s ease;
+  -o-transition: width 0.5s ease;
+}
+
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link.active::before {
+  width: 40px;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 2px solid #0078ff;
+  width: 103px;
+  margin-top: 5px;
+}
+.section-header {
+  margin-bottom: 4rem;
+}
+.header-h2 {
+  font-size: 3rem;
+}
+
+.header-p::after {
+  content: "";
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  border: 3px solid #0078ff;
+  width: 50px;
+  transform: translatex(-50%);
+  -moz-transform: translatex(-50%);
+  -ms-transform: translatex(-50%);
+  -o-transform: translatex(-50%);
+  -webkit-transform: translatex(-50%);
+}
+
+.service-card i {
+  font-size: 2rem;
+  line-height: 2;
+}
+.icon-circle {
+  height: 90px;
+  width: 90px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1.55;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+  box-shadow: 0 0 0 10px #0078ff;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.service-card:hover .icon-circle {
+  background-color: #0078ff;
+  color: white;
+  box-shadow: 0 0 0 10px #0077ff56;
+}
+#numbers {
+  background-image: linear-gradient(
+      rgb(17 129 255 / 73%),
+      rgb(17 129 255 / 73%)
+    ),
+    url(../images/counters-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.numbers-wrapper {
+  padding-block: 8rem;
+}
+
+.numbers-icon-circle {
+  height: 60px;
+  width: 60px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  line-height: 2.55;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+  box-shadow: 0 0 0 10px #cde1f8;
+}
+.port-card,
+.img-wrapper {
+  overflow: hidden;
+}
+.port-title {
+  font-size: 1rem;
+}
+.port-card:hover img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.port-card img {
+  transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
+}
+
+.testomial {
+  background-image: linear-gradient(
+      rgb(17 129 255 / 73%),
+      rgb(17 129 255 / 73%)
+    ),
+    url(../images/overlay-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-block: 5rem;
+  background-attachment: fixed;
+}
+.testmonail-wrapper .carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.testimonial-content {
+  font-size: 1.2rem;
+}
+.blog-card .card-footer img {
+  width: 35px;
+  height: 35px;
+}
+.blog-card .card-footer p {
+  font-size: small;
+}
+.blog-card .category {
+  font-size: 0.7rem;
+}
+#contact {
+  background-image: linear-gradient(
+      rgb(17 129 255 / 73%),
+      rgb(17 129 255 / 73%)
+    ),
+    url(../images/overlay-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-block: 5rem;
+  background-attachment: fixed;
+}
+.header-h3 {
+  position: relative;
+}
+
+.header-h3::after {
+  content: "";
+  position: absolute;
+  top: 130%;
+  left: 0;
+  border: 3px solid #0078ff;
+  width: 110px;
+}
+#contact textarea {
+  resize: vertical;
+}
+
+footer{
+    background-color: #0062d3;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .typewriter {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .testimonial-content {
+    padding: 0 18rem;
+  }
+}
+/* Designer, Developer, Freelancer, Photographer */
+/* Typewriter effect */
+@keyframes typing {
+  0%,
+  25% {
+    content: "";
+  }
+  1%,
+  24% {
+    content: "D";
+  }
+  2%,
+  23% {
+    content: "De";
+  }
+  3%,
+  22% {
+    content: "Des";
+  }
+  4%,
+  21% {
+    content: "Desi";
+  }
+  5%,
+  20% {
+    content: "Desig";
+  }
+  6%,
+  19% {
+    content: "Designe";
+  }
+  7%,
+  18% {
+    content: "Designer";
+  }
+
+  25%,
+  50% {
+    content: "";
+  }
+  26%,
+  49% {
+    content: "D";
+  }
+  27%,
+  48% {
+    content: "De";
+  }
+  28%,
+  47% {
+    content: "Dev";
+  }
+  29%,
+  46% {
+    content: "Deve";
+  }
+  30%,
+  45% {
+    content: "Devel";
+  }
+  31%,
+  44% {
+    content: "Develo";
+  }
+  32%,
+  43% {
+    content: "Develop";
+  }
+  33%,
+  42% {
+    content: "Develope";
+  }
+  34%,
+  41% {
+    content: "Developer";
+  }
+
+  50%,
+  75% {
+    content: "";
+  }
+  51%,
+  74% {
+    content: "F";
+  }
+  52%,
+  73% {
+    content: "Fr";
+  }
+  53%,
+  72% {
+    content: "Fre";
+  }
+  54%,
+  71% {
+    content: "Free";
+  }
+  55%,
+  70% {
+    content: "Freel";
+  }
+  56%,
+  69% {
+    content: "Freela";
+  }
+  57%,
+  68% {
+    content: "Freelan";
+  }
+  58%,
+  67% {
+    content: "Freelanc";
+  }
+  59%,
+  66% {
+    content: "Freelance";
+  }
+  60%,
+  65% {
+    content: "Freelancer";
+  }
+  75%,
+  100% {
+    content: "";
+  }
+  76%,
+  99% {
+    content: "P";
+  }
+  77%,
+  98% {
+    content: "Ph";
+  }
+  78%,
+  97% {
+    content: "Pho";
+  }
+  79%,
+  96% {
+    content: "Phot";
+  }
+  80%,
+  95% {
+    content: "Photo";
+  }
+  81%,
+  94% {
+    content: "Photog";
+  }
+  82%,
+  93% {
+    content: "Photogr";
+  }
+  83%,
+  92% {
+    content: "Photogra";
+  }
+  84%,
+  91% {
+    content: "Photograp";
+  }
+  85%,
+  90% {
+    content: "Photograph";
+  }
+  86%,
+  89% {
+    content: "Photographe";
+  }
+  87%,
+  88% {
+    content: "Photographer";
+  }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 15s infinite;
+  -webkit-animation: typing 15s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: fadeIn 0.5s ease-in-out infinite;
+  -webkit-animation: fadeIn 0.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+
+  @keyframes sequencePopup {
+    0%,
+    100% {
+      content: "developer";
+    }
+    50%,
+    100% {
+      content: "designer";
+    }
+  }
+
+  .typewriter::before {
+    content: "developer";
+    animation: fadeIn 12s linear infinite;
+  }
+}
+
+
